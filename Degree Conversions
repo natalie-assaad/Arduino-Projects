@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <title>Convert</title>
+    
+    <body>
+
+            <script>
+                function convertToCelcius() {
+                    var F = document.getElementById("degrees").value; 	
+                    //gets user input
+                    var C = (F -32) * 5/9;
+                        C = C.toFixed(1);
+                    //calculates conversion
+                    document.getElementById("answer").innerHTML = C;	
+                    //outputs result to element         
+                }
+                
+                function convertToFahrenheit() {
+                    var C =
+                    document.getElementById("degrees").value;
+                    //gets user input
+                    var F = (C *9/5) + 32;
+                        F = F.toFixed(1);
+                    //calculates conversion
+                    document.getElementById("answer").innerHTML = F;
+                    //outputs result to element
+                }
+                
+            </script>   
+
+                <p id = "answer" style="display:block"></p>
+        
+        <br // for looks, skips to next line>
+
+                <p >Enter degrees:<input type="text" id="degrees" value=" "//input text box></p>
+
+            <button onclick="convertToCelcius()">Fahreneheit to Celcius</button>
+        
+            <button onclick="convertToFahrenheit()">Celcius to Fahreneheit</button>
+        
+    </body>
+    
+</html>
